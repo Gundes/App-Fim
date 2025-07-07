@@ -1,0 +1,68 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 142 76% 36%;
+  --primary-foreground: 355 7% 97%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 142 76% 36%;
+}
+
+body {
+  @apply bg-gradient-to-br from-slate-900 via-green-900 to-slate-800 text-white min-h-screen;
+  font-family: 'Inter', sans-serif;
+}
+
+.glass-effect {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.star-rating {
+  @apply flex items-center gap-1;
+}
+
+.star {
+  @apply text-yellow-400 text-lg;
+}
+
+.star.empty {
+  @apply text-gray-400;
+}
+
+.futsal-gradient {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%);
+}
+
+.team-red {
+  @apply bg-red-500/20 border-red-500/50 text-red-100;
+}
+
+.team-blue {
+  @apply bg-blue-500/20 border-blue-500/50 text-blue-100;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
